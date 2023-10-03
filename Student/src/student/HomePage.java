@@ -25,7 +25,7 @@ public HomePage (Account acc){
         title = new JLabel(acc.getUsername()+" Welcome to Student Management Application");
         title.setFont(new Font("Arial", Font.BOLD, 25));
         title.setBounds(10, 10, 650, 20);
-        takeAttend= new JLabel("To Take Attendence");
+        takeAttend= new JLabel("To Take Attendance");
         takeAttend.setBounds(20, 100, 250, 20);
         takeAttend.setFont(new Font("Arial", Font.BOLD, 25));
         atte =new JButton("Click Me");
