@@ -32,7 +32,7 @@ public class ListOfStd implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		 frame = new JFrame("List of Students");
-		   frame.setSize(800,700);
+		   frame.setSize(700,1000);
 			frame.setVisible(true);
 			
 			frame.setFont(new Font("Arial", Font.BOLD, 25));
@@ -112,14 +112,14 @@ public class ListOfStd implements ActionListener {
 						pr.setInt(1,Integer.parseInt(stdId.get(i+1).getText()));
 						int row=pr.executeUpdate();
 						 System.out.println(row +" row(s) deleted ");
-					 	
-					 	actionPerformed(e);
+
 					 } catch (SQLException e1) {
 					 	// TODO Auto-generated catch block
 					 	e1.printStackTrace();
 					 }
 				 }
 			 }
+			actionPerformed(e);
 			 });
 		} catch (Exception exce) {
 			// TODO Auto-generated catch block
