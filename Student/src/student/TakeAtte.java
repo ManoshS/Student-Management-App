@@ -33,8 +33,8 @@ public class TakeAtte implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		//home.setVisible(false);
-		   frame = new JFrame("Take Attendence");
-		   frame.setSize(400,600);
+		   frame = new JFrame("Take Attandance");
+		   frame.setSize(400,1000);
 			frame.setVisible(true);
 		
 			 String query="select stdid,stdName from student;";
@@ -44,7 +44,7 @@ public class TakeAtte implements ActionListener {
 			id=new ArrayList<>();
 			pre=new JLabel();
 			ab=new JLabel();
-			butn=new JButton("Save Attendence");
+			butn=new JButton("Save Attendance");
 			int i=1;
 			try {
 				connect = ConnectSql.getConnection(DB.url,DB.usarName,DB.password);
