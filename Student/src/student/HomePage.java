@@ -32,22 +32,22 @@ public HomePage (Account acc){
         atte.setBounds(20, 150, 100, 50);
         
         addStd= new JLabel("To Add Student ");
-        addStd.setBounds(20, 250, 250, 20);
+        addStd.setBounds(350, 100, 250, 20);
         addStd.setFont(new Font("Arial", Font.BOLD, 25));
         add =new JButton("Click Me");
-        add.setBounds(20, 300, 100, 50);
+        add.setBounds(350, 150,  100, 50);
         
          delStd= new JLabel("To Delete Student ");
-        delStd.setBounds(20, 380, 250, 20);
+        delStd.setBounds(20, 300, 250, 20);
         delStd.setFont(new Font("Arial", Font.BOLD, 25));
         del = new JButton("Click Me");
-        del.setBounds(20, 420, 100, 50);
+        del.setBounds(20, 350,  100, 50);
         
         displayStdI= new JLabel("List Students Info");
-        displayStdI.setBounds(20, 500, 250, 20);
+        displayStdI.setBounds(350, 300, 250, 20);
         displayStdI.setFont(new Font("Arial", Font.BOLD, 25));
         displayStdIB = new JButton("Click Me");
-        displayStdIB.setBounds(20, 530, 100, 50);
+        displayStdIB.setBounds(350, 350, 100, 50);
         
         home.add(title);
         home.add(new JLabel(""));
