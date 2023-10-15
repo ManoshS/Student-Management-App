@@ -52,10 +52,10 @@ public class UpdateStd implements ActionListener {
 	
 			    getData.addActionListener((ActionEvent)->{
 			    	
-			    	String select="select * from student where stdid="+fstdId.getText()+";";
+			    	String select1="select * from student where stdid="+fstdId.getText()+";";
 			    	try {
 			    		
-				   PreparedStatement  pr=connect.prepareStatement(select);
+				   PreparedStatement  pr=connect.prepareStatement(select1);
 					ResultSet rs= pr.executeQuery();
 					while (rs.next()) {
 					System.out.println(rs.getInt(1)+" : "+rs.getString(2)+" : "+rs.getString(3)+" : "+rs.getString(4)+" : "
