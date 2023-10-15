@@ -11,8 +11,8 @@ import login.Account;
 
 public class HomePage  {
 JFrame home;
-JLabel title,addStd,delStd,takeAttend,displayStdI;
-JButton add,del,atte,displayStdIB;
+JLabel title,addStd,delStd,takeAttend,displayStdI,update;
+JButton add,del,atte,displayStdIB,updateB;
 Account acc;	
 public HomePage (Account acc){
 	   this.acc=acc;
@@ -49,6 +49,12 @@ public HomePage (Account acc){
         displayStdIB = new JButton("Click Me");
         displayStdIB.setBounds(350, 350, 100, 50);
         
+        update= new JLabel("Update Students Info");
+        update.setBounds(150, 430, 250, 20);
+        update.setFont(new Font("Arial", Font.BOLD, 25));
+        updateB = new JButton("Click Me");
+        updateB.setBounds(200, 480, 100, 50);
+        
         home.add(title);
         home.add(new JLabel(""));
         home.add(takeAttend);
@@ -61,11 +67,13 @@ public HomePage (Account acc){
         home.add(del);
         home.add(displayStdI);      
         home.add(displayStdIB);
-        
+        home.add(update);
+        home.add(updateB);
         add.addActionListener(new AddStudent(home));
         del.addActionListener(new DelStudent(home));
         atte.addActionListener(new TakeAtte(home));
         displayStdIB.addActionListener(new ListOfStd());
+        updateB.addActionListener(new UpdateStd());
         
         
         
